@@ -1,5 +1,13 @@
-com\example\ProductMerge\controller\ProductInventoryController.class
 com\example\ProductMerge\ProductMergeApplication.class
+com\example\ProductMerge\repository\ProductCatelogRepo.class
+com\example\ProductMerge\Entity\ProductCatalogEntity.class
 com\example\ProductMerge\repository\ProductInventoryRepo.class
-com\example\ProductMerge\Entity\ProductInventoryEntity.class
+com\example\ProductMerge\repository\ProductPricingRepo.class
 com\example\ProductMerge\service\ProductInventoryService.class
+com\example\ProductMerge\service\ProductCatalogService.class
+com\example\ProductMerge\controller\ProductInventoryController.class
+com\example\ProductMerge\service\ProductPricingService.class
+com\example\ProductMerge\Entity\ProductInventoryEntity.class
+com\example\ProductMerge\controller\ProductPricingController.class
+com\example\ProductMerge\controller\ProductCatalogController.class
+com\example\ProductMerge\Entity\ProductPricingEntity.class

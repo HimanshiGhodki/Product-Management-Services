@@ -23,5 +23,9 @@ public class ProductInventoryEntity {
 
     @Column(name = "product_quantity_purchased")
     private int purchase;
+/*
+    @OneToOne
+    @MapsId
+    private ProductCatalogEntity productCatalogEntity;*/
 
 }

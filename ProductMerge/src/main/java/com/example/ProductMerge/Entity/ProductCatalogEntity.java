@@ -18,5 +18,9 @@ public class ProductCatalogEntity {
     private String product_description;
     @Column(name = "product_brand")
     private String product_brand;
-
+/*
+    @OneToOne(mappedBy = "productCatalogEntity", cascade = CascadeType.ALL)
+    private ProductInventoryEntity productInventoryEntity;
+    @OneToOne(mappedBy = "productCatalogEntity", cascade = CascadeType.ALL)
+    private ProductPricingEntity productPricingEntity;*/
 }

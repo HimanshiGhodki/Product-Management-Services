@@ -1,14 +1,9 @@
 package com.example.ProductMerge.controller;
 
-import com.example.ProductMerge.Entity.ProductCatalogEntity;
-import com.example.ProductMerge.Entity.ProductInventoryEntity;
 import com.example.ProductMerge.repository.ProductCatelogRepo;
-import com.example.ProductMerge.service.ProductCatalogService;
 import com.example.ProductMerge.service.ProductInventoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/productinventory")
@@ -32,28 +27,13 @@ public class ProductInventoryController {
         return n;
     }
 
-    @PostMapping("/addproductinventory/{product_name}/{product_quantity_purchased}")
-    private String saveProductInventory(@PathVariable(value = "product_name") String product_name ,
-                                        @PathVariable(value = "product_quantity_purchased") int product_quantity_purchased) {
+    @PutMapping("/addproductinventory/{product_name}/{product_quantity_purchased}/{price_of_a_product}")
+    private String saveProductInventory(@PathVariable(value = "product_name") String product_name,
+                                        @PathVariable(value = "product_quantity_purchased") int product_quantity_purchased,
+                                        @PathVariable(value = "price_of_a_product") int price_of_a_product) {
 
-            return productInventoryService.saveProductInventoryDetails(product_name, product_quantity_purchased);
-
-
-
-
-
-
-
-
-        /*productInventoryService.saveProductInventoryDetails(productEntity);
-        return ("Added Successfully");*/
-    }
-
-
-    /*@PutMapping("/update/{product_name}")
-    public void saveProductInventoryDetails(@PathVariable(value = "product_name") String product_name){
+        return productInventoryService.saveProductInventoryDetails(product_name, product_quantity_purchased, price_of_a_product);
 
     }
-*/
 
 }

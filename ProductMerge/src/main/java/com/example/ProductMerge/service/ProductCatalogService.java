@@ -9,18 +9,17 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductCatalogService {
 
-    @Autowired(required=true)
+    @Autowired
     public ProductCatelogRepo productCatelogRepo;
 
     public ProductCatalogEntity findById(int product_id) {
         ProductCatalogEntity productCatalogEntity = productCatelogRepo.findById(product_id)
-                .orElseThrow(()-> new ResourceNotFoundException("Product not found for id::"+product_id));
+                .orElseThrow(() -> new ResourceNotFoundException("Product not found for id::" + product_id));
         return productCatalogEntity;
     }
 
-    public void saveProductCatalogDetails(ProductCatalogEntity productCatalogEntity){
+    public void saveProductCatalogDetails(ProductCatalogEntity productCatalogEntity) {
         productCatelogRepo.save(productCatalogEntity);
     }
-
 
 }

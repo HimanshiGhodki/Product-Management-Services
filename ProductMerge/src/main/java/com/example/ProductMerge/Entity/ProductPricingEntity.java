@@ -19,6 +19,10 @@ public class ProductPricingEntity {
 
     @Column(name = "cost_unit")
     private int cost_unit;
+/*
+    @OneToOne
+    @MapsId
+    private ProductCatalogEntity productCatalogEntity;*/
 
 }
 

@@ -1,5 +1,13 @@
 G:\ProductMerge\src\main\java\com\example\ProductMerge\repository\ProductInventoryRepo.java
 G:\ProductMerge\src\main\java\com\example\ProductMerge\Entity\ProductInventoryEntity.java
+G:\ProductMerge\src\main\java\com\example\ProductMerge\controller\ProductCatalogController.java
+G:\ProductMerge\src\main\java\com\example\ProductMerge\repository\ProductCatelogRepo.java
+G:\ProductMerge\src\main\java\com\example\ProductMerge\repository\ProductPricingRepo.java
+G:\ProductMerge\src\main\java\com\example\ProductMerge\controller\ProductPricingController.java
+G:\ProductMerge\src\main\java\com\example\ProductMerge\Entity\ProductPricingEntity.java
+G:\ProductMerge\src\main\java\com\example\ProductMerge\Entity\ProductCatalogEntity.java
 G:\ProductMerge\src\main\java\com\example\ProductMerge\service\ProductInventoryService.java
 G:\ProductMerge\src\main\java\com\example\ProductMerge\controller\ProductInventoryController.java
+G:\ProductMerge\src\main\java\com\example\ProductMerge\service\ProductCatalogService.java
+G:\ProductMerge\src\main\java\com\example\ProductMerge\service\ProductPricingService.java
 G:\ProductMerge\src\main\java\com\example\ProductMerge\ProductMergeApplication.java
